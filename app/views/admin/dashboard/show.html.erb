@@ -1,2 +1,41 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<%# <h1>AdminDashboard#show</h1> %>
+<h1> <center>AdminDashboard<center></h1>
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr class="success">
+        <th colspan="2">Entity</th>
+        <th>Count</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr class="info">
+      <th colspan="2">
+        <h6>
+          <%=link_to "Total products", [:admin, :products]%>
+        </h6>
+      </th>
+      <th>
+        <h5>
+          <%=@products_count%>
+        </h5>
+      </th>
+    </tr>
+    <tr class="info">
+      <tr class="info">
+        <th colspan="2">
+          <h6>
+            <%=link_to "Total categories", [:admin, :products]%>
+          </h6>
+        </th>
+        <th>
+          <h5>
+            <%=@categories_count%>
+          </h5>
+        </th>
+      </tr>
+    </tr>
+    </tbody>
+  </table>
+</div>
